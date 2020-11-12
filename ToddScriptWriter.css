@@ -1,0 +1,1908 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height:  100%;
+	width: 100%;
+    background-color:black;
+    font-family:"Avenir Next", Roboto , cursive, Arial, sans-serif;
+
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color : black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-family:"Avenir Next", Roboto , cursive, Arial, sans-serif;
+    overflow: hidden;
+    /* background-color : rgb(253, 253, 253); */
+    background-color: black;
+}
+
+.Page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.WholeView{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+
+
+.topControl{
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    overflow: hidden;
+    background-color: white;
+    /* box-shadow: 0px 0.1vh 0.2vh rgba(145, 144, 144, 0.753); */
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+}
+
+.logo{
+    position: absolute;
+    width: auto;
+    height: 5vh;
+    left: 6vh ;
+    top: calc(50% - 2.5vh)
+}
+
+
+
+.TitleDiv{
+    position: relative;
+    width: 60vh;
+    height: 8vh;
+    display: grid;
+    place-items: center;
+}
+
+.TitleHStack{
+    position: relative;
+    height: 3.5vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.TitleTextArea{
+    position: relative;
+    height: 3.5vh;
+    width: 100%;
+    padding: 0.5vh;
+    margin: 0px;
+    outline: none;
+    border: none;
+        /* border-bottom: 0.2vh solid black; */
+    resize: none;
+    font-family: 'Courier Prime', monospace;
+    font-size: 2.2vh;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+
+/* .userTopTab{
+	position: absolute;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	right: 0px;
+} */
+
+#save{
+    position: absolute;
+    /* background: #428FFF; */
+    width: 9vh;
+    height: 3.75vh;
+	border: none;
+    /* color :white; */
+    right: 0px;
+	white-space: nowrap;
+    font-weight: bold;
+    top: calc(4vh - 1.875vh);
+    margin-right: calc(6vh + 5vh + 1vh);
+    vertical-align: middle;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 4vh;
+	font-size: 1.3vh;
+    font-family:"Avenir Next", Roboto , cursive, Arial, sans-serif;
+    outline: none;
+    resize: none;
+
+    border: 0.15vh solid #428FFF;
+    color: #428FFF;
+    background: transparent;
+
+}
+
+
+#save:hover{
+    border: rgb(59, 119, 231);
+    box-shadow: transparent;
+    border-radius: 0.4vh;
+    transition: all .3s ease-in;
+    transition: all .3s ease-out;
+    transform: scale(1.0, 1.0);
+    background: #428FFF;
+    color :white;
+}
+#save:not(:hover){
+    transition: all .3s ease-out;
+    transform: scale(1.0, 1.0);
+}
+
+
+
+#save:active{
+    background:rgb(44, 89, 172);
+    /* box-shadow: 0px 0px 4px #428FFF; */
+}
+
+
+#publish{
+    position: absolute;
+     /* background: #FFC842; */
+     background: transparent;
+     width: 9.3vh;
+     height: 3.5vh;
+     /* color :white; */
+     color :#FFC842;
+     border: 0.15vh solid #FFC842;;
+     white-space: nowrap;
+     font-weight: bold;
+     display: inline-block;
+     cursor: pointer;
+     /* top: calc(50%); */
+
+     border-radius: 4vh;
+     font-size: 1.5vh;
+     font-family: "Avenir Next", Roboto, cursive, Arial, sans-serif;
+     text-align: center;
+     outline: none;
+
+
+     /* border: none; */
+     white-space: nowrap;
+		 top: calc(50% - 1.75vh);
+		 right: 22vh;
+
+
+ }
+
+#publish:hover{
+    border: rgb(231, 208, 73);
+    border-radius: 0.4vh;
+    transition: all .3s ease-in;
+    transform: scale(1.0, 1.0);
+    background: #FFC842;
+    color :white;
+ }
+
+ #publish:not(:hover){
+    transition: all .3s ease-in;
+    transform: scale(1.0, 1.0);
+
+ }
+#publish:active{
+     background:rgb(207, 163, 51);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+.Controls{
+    position: relative;
+    width: 100vw;
+    height: 92vh;
+    /* display: flex;
+    flex-direction: column; */
+    flex-shrink: 0;
+    background-color: #4e4e4e05;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+
+
+
+.MenuCharNewCharDiv{
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 1);
+    /* z-index: 1; */
+}
+
+.MenuCharNewCharHStack{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 1);
+    /* z-index: ; */
+}
+
+.MenuStation{
+    position: relative;
+    height: 5vh;
+    width: 5vh;
+}
+
+.MenuDiv{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-top-right-radius: 0.4vh;
+    border-bottom-right-radius: 0.4vh;
+
+
+}
+
+.Menu{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.MenuUI{
+    position: relative;
+    width: 2vh;
+    height: 2vh;
+    object-fit: contain;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+.CharactersStation{
+    position: relative;
+    width: calc(100% - 15vh);
+    height: 100%;
+    display: grid;
+    place-items: center;
+    /* background-color: red; */
+}
+.CharactersCenterDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.CharactersDiv{
+    position: relative;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-left: 2vh;
+}
+
+.CharactersObject{
+    border: none;
+    background-color: #428FFF;
+    width: auto;
+    height: 3.7vh;
+    border-radius: 10vh;
+    font-size: 1.1vh;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    flex-shrink: 0;
+    outline: none;
+    transform: translate(0 , 0 );/*this is for to remove the boarder from the dragable object*/
+    text-align: center;
+    border : 2px solid rgba(255, 255, 255, 0);
+    display: grid;
+    place-items: center ;
+    margin-left: 2vh;
+}
+
+.CharacterNameLabel{
+    position: relative;
+    margin: auto;
+    font-size: 1.4vh;
+    font-weight: 600;
+    color: white;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+
+
+
+
+.AddCharStation{
+    position: absolute;
+    right: 0;
+    height: 5vh;
+    width: 5vh;
+    margin-right: 5vh;
+}
+
+
+.AddCharDiv{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+}
+
+.AddCharButton{
+    position: relative;
+    height: 4vh;
+    width: 4vh;
+    border-radius: 4vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.AddCharUI{
+    position: relative;
+    width: 2vh;
+    height: 2vh;
+    object-fit: contain;
+}
+
+.AddCharButton:active{
+    opacity: 0.75;
+}
+
+
+
+
+.TypeWriterDivStation{
+    position: relative;
+    width: calc(100%);
+    height: calc(92vh);
+    bottom: 5vh;
+    background-color: white;
+}
+
+.TypeWriterBackgroundImage{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(230, 230, 230); */
+    /* background-color: white; */
+}
+
+.TypeWriterBackgroundUI{
+    display: none;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+}
+
+
+.sideMenu{
+    position: absolute;
+    left: 0;
+    top: 5vh;
+    width: 18vw;
+    height: calc(100% - 5vh);
+    background-color: rgb(0, 0, 0);
+    display: none;
+    z-index: 1;
+    border-top-right-radius: 1.5vh;
+    /* border-bottom-right-radius: 2vh;
+    border-top-right-radius: 2vh; */
+    /* box-shadow: 0.1vh 0vh 0.5vh rgba(145, 144, 144, 0.753); */
+}
+
+.SidMenuLabelDiv{
+    position: relative;
+    width: 100%;
+    height: 4.5vh;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    margin-bottom: 2vh;
+}
+
+.SidMenuLabel{
+    position: relative;
+    font-size: 4vh;
+    font-weight: 600;
+    color: white;
+}
+
+
+.SideMenuContent{
+    position: relative;
+    width: 18vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.SideMenuHStack{
+    position: relative;
+    width: calc(100% - 3vh );
+    margin-left: 3vh;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.SideMenuUIs{
+    /* position: relative;
+    width: 3vh;
+    height: 3vh;
+    object-fit: contain; */
+}
+
+
+.TopMenuContent{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0px;
+}
+
+.AddArtistTextAreaDiv{
+    position: relative;
+    width: 18vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.AddArtistLabelDiv{
+    position: relative;
+    width: 100%;
+    height: 3.5vh;
+    margin-top: 1vh;
+    margin-left: 3vh;
+}
+
+
+.AddArtistLabel{
+    position: relative;
+    font-size: 1.8vh;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+.AddArtistHStackMenuDiv{
+    position: relative;
+    width: calc(18vw - 5vh);
+    height: 3vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-left: 3vh;
+}
+
+.AddArtistTextArea{
+    position: relative;
+    width: calc(100% - 3vh);
+    height: 100%;
+    background-color: transparent;
+    border-radius: 0.4vh;
+    left: 0;
+    top: 0;
+    font-size: 1.9vh;
+    font-weight: 700;
+    resize: none;
+    color: gray;
+    border: 0.1vh solid rgb(255, 255, 255 , 0.125);
+    padding: 0px;
+    margin: 0px;
+    padding-left: 0.5vh;
+}
+
+.AddArtistButton{
+    position: relative;
+    width: 3vh;
+    height: 3.6vh;
+    /* right: -5vh; */
+    top: 0;
+    background-color: rgb(83, 83, 83);
+    display: grid;
+    place-items: center;
+    border-bottom-left-radius: 0.4vh;
+    border-radius: 0.4vh;
+}
+
+.AddArtistUI{
+    position: absolute;
+    width: 2.5vh;
+    height: 2.5vh;
+}
+
+
+
+
+
+
+
+.ArtistLocationDiv{
+    position: relative;
+    width: calc(18vw - 5vh);
+    height: auto;
+    display: block;
+    margin-top: 1vh;
+    left: 5vh;
+}
+
+.ArtistPlacement{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.AddArtistObject{
+    position: relative;
+    width: 100%;
+    height: 4vh;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    flex-direction: row;
+}
+
+.ArtistCenterDiv{
+    position: relative;
+    width: auto;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.ArtistName{
+    position: relative;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+    padding-left: 1vh;
+}
+
+.RemoveArtistObject{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 4vh;
+    height: 4vh;
+    display: grid;
+    place-items: center;
+    border-left: rgb(150, 150, 150);
+}
+
+.RemoveArtistLabel{
+    position: relative;
+    font-size: 1.5vh;
+    font-weight: 700;
+    color: rgb(202, 202, 202);
+}
+
+
+
+
+
+.BottomAbsoluteMenuContent{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 3px;
+}
+.BottomVStackMemu, .TopVStackMemu{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.CreatorsModeButton, .BackToDashButton, .HighligtsButton, .HotKeysButton, .SummaryButton, .TagsButton{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    display: grid;
+    place-items: center;
+}
+
+.CreatorsModeButton:hover, .BackToDashButton:hover, .HighligtsButton:hover, .HotKeysButton:hover, .SummaryButton:hover, .TagsButton:hover{
+    background-color: rgb(51, 51, 51);
+    transition: all 0.3s ease-in-out;
+}
+
+.MenueTextText{
+    position: relative;
+    color: rgb(211, 211, 211);
+    font-size: 1.8vh;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.DialogeAndDiscriptionBubblesStation{
+    position: relative;
+    height: calc(100% - 15vh);
+    width: calc(100%);
+    display: grid;
+    place-items: center;
+    /* background-color: red; */
+}
+
+.PaperDiv{
+    position: relative;
+    height: calc(100% - 10vh);
+    width: 60vw;
+    background-color: white;
+    /* box-shadow: 0 0 1vh rgb(0,0,0,0.25); */
+    left: 1.5vh;
+    display: grid;
+    place-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.PaperBottomPusher{
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    left: 5%;
+    width: calc(70%);
+}
+
+.ContentHolder{
+    position: relative;
+    height: auto;
+    bottom: 0;
+    width: calc(70%);
+		list-style: none;
+}
+
+
+
+
+.DialogueDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-family: 'Courier Prime', monospace;
+    transition: all 0.4s ease-in-out;
+}
+.CharcterNameDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+.CharacterName{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: cneter;
+    font: 500;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+    margin-bottom: 1vh;
+}
+
+.DialogueLabel, .ArtDesciptionLabel, .SlugLabel, .NoteLabel{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 500;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+		outline: none;
+		resize: none;
+		background-color: transparent;
+}
+
+.removeThisDia, .removeThisArt , .removeThisSlug , .removeThisNote {
+	position: absolute;
+	top: 0px ;
+	font-size: 2vh;
+	font-weight: bold;
+	right : 0px ;
+	z-index: 2;
+}
+
+.DialogueArea{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 500;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+		outline: none;
+		resize: none;
+}
+
+
+
+
+
+.ArtDesciptionDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 3vh;
+    font-family: 'Courier Prime', monospace;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+}
+
+.ArtDesciptionTitle{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 500;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+}
+
+.ArtDesciptionDiv{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 500;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+}
+
+.DialogueLabel, .ArtDesciptionLabel, .SlugLabel, .NoteLabel{
+	border: 2px solid transparent;
+	border-radius: 1vh;
+}
+
+.DialogueLabel:focus , .ArtDesciptionLabel:focus , .SlugLabel:focus , .NoteLabel:focus{
+	border: 2px solid #428FFF;
+	border-radius: 1vh;
+	transition: all 0.2s ease-in-out;
+}
+
+.SlugLabel{
+	width: 85%;
+	height: 2vh;
+	padding: 0px;
+	margin: 0px;
+	top: 0.525vh;
+	padding-left: 1vh;
+}
+.SlugLabel:focus {
+	border: 1px solid #428FFF;
+	border-radius: 1vh;
+	transition: all 0.2s ease-in-out;
+}
+
+
+
+.SlugDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 3vh;
+    font-family: 'Courier Prime', monospace;
+    transition: all 0.4s ease-in-out;
+}
+
+.IntLabel{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 600;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+    margin-right: 1vh;
+}
+/* .SlugLabel{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 600;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+    font-family: 'Courier Prime', monospace;
+} */
+
+
+
+
+
+.NoteDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 3vh;
+    transition: all 0.4s ease-in-out;
+    /* display: grid;
+    place-items: center; */
+}
+
+.NoteVStack{
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.NoteTitle{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 600;
+    font-size: 1.7vh;
+    color: rgb(66, 66, 66);
+}
+.NoteLabel{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 600;
+    font-size: 1.7vh;
+    color: rgb(66, 66, 66);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.DiaImgAndTextAreaStation{
+    position: absolute;
+    width: calc(100%);
+    height: calc(15vh);
+    bottom: calc(0vh);
+}
+
+.DiaImgTextHStackDiv{
+    position: relative;
+    height: calc(100%);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.DiaImgTextCenterDiv{
+    position: relative;
+    height: 100%;
+    width: calc(100%);
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+.TypeWriterTextAreaDiv{
+    position: relative;
+    width: 60vw;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-left: 3vh;
+
+}
+
+
+
+.TyperWriter{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 5vh);
+    font-family: 'Courier Prime', monospace;
+    background-color: white;
+    border: none;
+    font: 600;
+    font-size: 2vh;
+    color: rgb(50, 50, 50);
+    resize: none;
+    text-align: center;
+    padding: 2.5vh;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+.ImgDiaSlugAlignmentDiv{
+    position: absolute;
+    bottom: 6.5vh;
+    right: calc(6vh);
+    width: auto;
+    height: auto;
+}
+
+
+.ImgDiaSlugVStackDiv{
+    position: relative;
+    width: 8.5vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.ImgDiscriptionButtonDiv, .DialogueButtonDiv, .SlugButtonDiv{
+    position: relative;
+    width: 8.5vh;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+}
+
+.Note, .SlugButtonDiv, .ImgDiscriptionButtonDiv, .DialogueButtonDiv{
+    position: relative;
+    width: calc(8.5vh + 4px);
+    height: calc(8.5vh + 4px);
+    margin-bottom: 1.5vh;
+}
+
+
+.ImgDiscriptionButton , .DialogueButton , .SlugButton , .NoteButton{
+    position: relative;
+    width: 8.5vh;
+    height: 8.5vh;
+    border-radius: 10.5vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 2px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0vh 1.25vh #5f5f5f67;
+}
+
+
+
+.ImgDiscriptionButton{
+    /* border: 0.3vh solid #428eff88; */
+    box-shadow: 0 0vh 1vh #5f5f5f67;
+    margin-bottom: 1.5vh;
+}
+
+.DialogueButton{
+        /* border: 0.3vh solid #ffc94281; */
+        border : 2px solid #428FFF;
+        margin-bottom: 1.5vh;
+}
+
+.SlugButton{
+    /* border: 0.3vh solid #ffc94281; */
+box-shadow: 0 0vh 1vh #5f5f5f67;
+margin-bottom: 1.5vh;
+}
+
+
+.AddImgDiscriptionUI , .AddDialogueUI , .SlugUI, .NoteUI{
+    position: relative;
+    width: auto;
+    height: 3.5vh;
+    object-fit: contain;
+    outline: none;
+}
+
+
+
+
+
+.GoNewProjectAcrossTabsDiv{
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    top: 0vh;
+    right: 0;
+    margin-right: 4vh;
+    margin-top: 1.5vh;
+    z-index: 2;
+}
+
+.GoNewProjectAcrossTabsButton{
+    position: relative;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 5vh;
+    background-color: #428FFF;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0.45vh 1vh #2d6ecfc4;
+    transition: all .3s ease-in;
+}
+
+.AddNewProjectsButtonUI{
+    position: relative;
+    height: 2.5vh;
+    width: 2.5vh;
+    object-fit: contain;
+}
+
+.GoNewProjectAcrossTabsButton:active{
+    box-shadow: 0 0.125vh 0.5vh #2d6ecfc4;
+    transition: all .3s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modals : Modals : Modals : Modals : Modals : Modals */
+.characterModal{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    z-index: 4;
+}
+
+.CenterCardDiv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+.CharacterCard{
+    position: relative;
+    width:30vw;
+    height: 20vh;
+    background-color: white;
+    border-radius: 4vh;
+}
+
+
+.AddAnotherCharacterModalObject{
+    position: relative;
+    width: 50vh;
+    height: 17vh;
+    background-color: white;
+    border-radius: 1.5vh;
+    left: calc(50% - 25vh);
+    top: calc(50% - 7.5vh);
+    box-shadow: 0px 0px 3vh rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+}
+
+.InstructionsLabelDismissButton{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 1.5vh;
+    margin-top: 1vh;
+}
+
+
+.AddCharacterInputLabel{
+    position: relative;
+    color: rgb(0, 0, 0, 0.75);
+    font-size: 1.65vh;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    text-align: center;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    font-weight: 600;
+    top: -3vh;
+}
+.DismissButtonDiv{
+    position: relative;
+    width: 100%;
+    height: 3vh;
+
+}
+
+.DismissButton{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.65vh;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    color: rgb(0, 0, 0, 0.5);
+    outline: none;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    width: 3vh;
+    height: 3vh;
+    left: calc(100% - 3.5vh);
+
+
+}
+
+
+
+.InputAndAddCharacterButton{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top:-3vh;
+    left: calc(50% - 19.375vh);
+    margin-top: 1.5vh;
+    flex-shrink: 0;
+}
+
+.AddCharacterIputAndErrorMessage{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.AddingCharacterInput{
+    position: relative;
+    width: 31vh;
+    height:3.1vh;
+    border: 0.3vh solid rgb(0, 0, 0, 0.25);
+    border-radius: 0.5vh;
+    font-size: 1.5vh;
+    font-weight: 600;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+.AddingCharacterInput:focus{
+    border:  0.3vh solid #428FFF;
+    outline: #428FFF;
+    transition: all 0.2s ease-in-out;
+}
+
+.AddCharacterErrorMessage{
+    position: absolute;
+    color: rgb(228, 32, 32);
+    font-size: 1.2vh;
+    font-weight: 500;
+    font-family: "Avenir Next" , Roboto, cursive, Arial, sans-serif;
+    display: none;
+    top: calc(3.1vh + 0.9vh);
+}
+
+.AddCharacterButton{
+    position: relative;
+    width: 7.75vh;
+    height: 2.9vh;
+    border-radius: 1.5vh;
+    outline: none;
+    border: none;
+    color: white;
+    background-color:  rgb(59, 119, 231);
+    margin-left: 1.5vh;
+}
+
+.AddCharacterConfirmationButton{
+    position: absolute;
+    width: 10vh;
+    height: 4vh;
+    background-color: #FFC842;
+    color: white;
+    border-radius: 0.2vh;
+    outline: none;
+    border: none;
+    font-size: 1.8vh;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    text-align: center;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    font-weight: bold;
+    bottom: 2.25vh;
+    /* top: calc(-3vh + 1.5vh); */
+    left: calc(50% - 5vh );
+    /* margin-top: 1.5vh; */
+    flex-shrink: 0;
+}
+
+.RemoveCharacterButton{
+    position: relative;
+    color: white;
+    background-color: #ff4242;
+    font-size: 1.45vh;
+    width: 8vh;
+    height: 4vh;
+    font-weight: 700;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 1.0vh;
+    left: calc(100% - 8vh - 11vh );
+    bottom: calc(3vh + 3vh );
+    display: none;
+    flex-shrink: 0;
+}
+
+.RemoveCharacterButton:active{
+    background-color: #c23333;
+}
+
+
+
+
+
+
+
+
+.AddSummary{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+.AddSummaryModal{
+    position: relative;
+    height: 60vh;
+    width: 50vh;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 2vh;
+}
+
+
+
+.DismissSummaryButtonDiv{
+    position: relative;
+    width: 100%;
+    height: 3vh;
+    margin-top: 2vh;
+}
+
+.DismissSummaryButton{
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.65vh;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    color: rgb(0, 0, 0, 0.5);
+    outline: none;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    width: 3vh;
+    height: 3vh;
+    right: 2vh;
+}
+
+
+
+.VStackSummary{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.TopSummary{
+    position: relative;
+    width: calc(100% - 6vh);
+    height: calc(20%);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.SummaryTitle{
+    position: relative;
+    color: black;
+    font-size: 3vh;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 2vh;
+}
+
+.SummaryExplaination{
+    position: relative;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.8vh;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+
+.BottomSummary{
+    position: relative;
+    height: 70%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.SummaryObject{
+    position: relative;
+    width: calc(100% - 4vh);
+    height: calc(100% - 4vh);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+#summary{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    line-height: middle;
+    vertical-align: top;
+    font-weight: bold;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    resize: none;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+
+}
+#summary:focus{
+    border:  0.3vh solid #428FFF;
+    outline: #428FFF;
+    transition: all 0.2s ease-in-out;
+}
+
+.SummaryConfirmButtonDiv{
+    position: relative;
+    width: calc(100%);
+    height: calc(5vh);
+    display: grid;
+    place-items: center;
+}
+
+.SummaryConfirmButton{
+    position: relative;
+    width: calc(8.75vh);
+    height: calc(5vh);
+    display: grid;
+    place-items: center;
+    background-color: #428FFF;
+    color: white;
+    font-size: 2vh;
+    font-weight: 700;
+    border-radius: 5vh;
+    bottom: 3vh;
+
+}
+
+
+
+
+.HotKeysModal{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.HotKeysCard{
+    position: relative;
+    height: 65vh;
+    width: 52.5vh;
+    background-color: white;
+    border-radius: 2vh;
+}
+
+.HotKeysScrollable{
+    position: relative;
+    width: calc(100% - 6vh);
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.HotKeysVStack{
+    position: relative;
+    width: calc(100%);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.HotTopSummary{
+    position: relative;
+    width: calc(100%);
+    height: calc(20%);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.HotkeysContenDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.HotKeysLabelDiv{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    color:rgb(0, 0, 0, 0.75);
+    font-size: 1.8vh;
+    font-weight: 600;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+.DismissHotButtonDiv{
+    position: relative;
+    width: 100%;
+    height: 3vh;
+    margin-top: 2vh;
+}
+
+.DismissHotButton{
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.65vh;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    color: rgb(0, 0, 0, 0.5);
+    outline: none;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    width: 3vh;
+    height: 3vh;
+    right: 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CustomAlertModal{
+    position: absolute;
+    z-index: 4000;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.AlertCard{
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 3vh;
+    box-shadow: 0px 0px 0.5vh rgb(0, 0, 0, 0.5);
+    bottom: calc(5vh);
+    display: grid;
+    place-items: center;
+    display: none;
+    top: -5vh;
+    padding-left: 1.55vh;
+    padding-right: 1.55vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.AlertLabel{
+    position: relative;
+    color :#428FFF;
+    font-size: 1.65vh;
+    font-weight: 700;
+    font-family: "Avenir Next" , Roboto, cursive, Arial, sans-serif;
+    padding-left: 1.55vh;
+    padding-right: 1.55vh;
+    padding-top: 1.55vh;
+    padding-bottom: 1.55vh;
+
+}
+
+
+
+
+
+.AddTagsModal{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.AddTagsCard{
+	position: relative;
+	width: 80vh;
+	height: 80vh;
+	background-color: white;
+	border-radius: 3vh;
+	box-shadow: 0px 0px 1vh rgb(0, 0, 0, 0.5);
+	display: grid;
+	place-items: center;
+}
+
+.TagsVStack{
+	position: relative;
+	height: calc(100% - 6vh);
+	width: calc(100% - 6vh);
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+.TagsLabelDiv{
+	position: relative;
+	width: 100%;
+	height: 4vh;
+	/* background-color: red; */
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 0;
+}
+
+.explainationBoxDiv{
+	position: relative;
+	width: 100%;
+	height: 12vh;
+	/* background-color: blue; */
+	margin-left: 2vh;
+}
+
+#explainationBox{
+    position: relative;
+    width: 100%;
+    font-size: 1.8vh;
+		font-weight: 600;
+    font-weight: normal;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    overflow-y: scroll;
+    white-space: pre-wrap;
+		/* background-color: orange; */
+}
+
+.TagsControlsDiv{
+	position: relative;
+	height: calc(65vh - 3vh - 4vh - 7vh);
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 0;
+	/* background-color: blue; */
+	overflow-y: hidden;
+	overflow-x: hidden;
+	border-radius: 1vh;
+	border: 0.3vh solid rgb( 0, 0, 0, 0.25 );
+}
+
+.TagSelectionHStack{
+	position: relative;
+	height: 100% ;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 0;
+	/* background-color: green; */
+	overflow-y: hidden;
+
+}
+
+.nonSelectedTags{
+		position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+		height: 100%;
+		width: 50%;
+		/* overflow-x: hidden;
+		overflow-y: scroll; */
+		overflow-y: scroll;
+		margin-left: 2vh;
+}
+
+.nonSelectedTagsStack{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	height: auto;
+	width: auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin-top: 1vh;
+}
+
+
+
+.selectedTags{
+	position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+	height: 100%;
+	width: 50%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.SelectedTagsStack{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	height: auto;
+	width: auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin-top: 1vh;
+}
+
+
+.SelectedStatusLabel, .UnSelectedStatusLabel{
+	position: relative;
+	font-size: 1.8vh;
+	font-weight: 600;
+	color : black;
+}
+
+.TagObject{
+    position: relative;
+    background: #428FFF;
+    width: 18vh;
+		height: 3.2vh;
+		border: none;
+		color :white;
+		white-space: nowrap;
+    font-weight: bold;
+		display: inline-block;
+    cursor: pointer;
+		border-radius: 4.5vh;
+		font-size: 1.3vh;
+    font-family: "Avenir Next", Roboto, cursive, Arial, sans-serif;
+    outline: none;
+    /* left: calc(50% - 9vh); */
+    margin-top: 1vh;
+}
+
+
+
+
+
+
+
+.PublishPublicOrPrivateModal{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.PublishPublicOrPrivateCard{
+	position: relative;
+	width: 60vh;
+	height: 45vh;
+	background-color: white;
+	border-radius: 3vh;
+	box-shadow: 0px 0px 1vh rgb(0, 0, 0, 0.5);
+	display: grid;
+	place-items: center;
+
+	/* left: calc(50% - 30vh);
+	top: calc(50% - 22.5vh); */
+}
+
+
+.PublishPublicOrPrivateVStack{
+	position: relative;
+	width: calc(100% - 6vh);
+	height: calc(100% - 6vh);
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+.PublishTitleExitButtonDiv{
+	position: relative;
+	height: 4vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.PublishTitleDiv{
+	position: relative;
+	height: auto;
+	width: auto;
+	font-weight: 700;
+	color : rgb(0,0,0, 1);
+
+}
+
+.CancelButton{
+	position: absolute;
+	height: auto;
+	width: auto;
+	right: 0vh;
+	top: -1.5vh;
+	font-weight: 700;
+	color : rgb(0,0,0, 0.5);
+}
+
+
+
+.PublishExplainationAndButton{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	margin-top: 1.5vh;
+}
+
+.PublishExplaintationCenterDiv{
+	position: relative;
+	width: 100%;
+	height: auto;
+	font-size: 1.8vh;
+	font-weight: 600;
+	color : rgb(0,0,0, 0.5);
+}
+
+.PublishButtonCenterDiv{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: grid;
+	place-items: center;
+	margin-top: 1.50vh;
+}
+
+.PublishPrivateButton , .PublishPublicButton{
+    position: relative;
+    width: calc(9vh);
+    height: calc(4vh);
+    display: grid;
+    place-items: center;
+    background-color: #428FFF;
+    color: white;
+    font-size: 1.8vh;
+    font-weight: 700;
+    border-radius: 5vh;
+}
+
+
+.PublishPrivateButton{
+	margin-bottom: 1.5vh;
+}
+
+
+.PublishPrivateButton:active , .PublishPublicButton:active{
+	transition: all 0.3s ease-in-out;
+	background-color: #27569c;
+}
